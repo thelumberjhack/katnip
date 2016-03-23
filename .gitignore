@@ -3,3 +3,4 @@
 unit_tests/logs/
 katnip.egg-info/
 docs/build
+.env

@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-VERSION = '0.2.2'
+VERSION = '0.2.3'
 AUTHOR = 'Cisco SAS team'
 EMAIL = 'kitty-fuzzer@googlegroups.com'
 URL = 'https://github.com/cisco-sas/katnip.git'
@@ -20,6 +20,15 @@ setup(
     url=URL,
     packages=find_packages(),
     install_requires=['kittyfuzzer'],
-    keywords='fuzz framework sulley kitty katnip',
-    package_data={}
+    keywords='fuzz,fuzzing,framework,sulley,kitty,katnip',
+    package_data={},
+    classifiers=[
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 2 :: Only',
+        'Topic :: Security',
+        'Topic :: Software Development :: Libraries :: Application Frameworks',
+        'Topic :: Utilities'
+    ]
 )

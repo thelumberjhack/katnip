@@ -34,7 +34,7 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.todo',
     'sphinx.ext.coverage',
-    'sphinx.ext.pngmath',
+    'sphinx.ext.imgmath',
     'sphinx.ext.viewcode',
     'sphinx.ext.graphviz',
 ]
@@ -296,7 +296,7 @@ texinfo_documents = [
 # We need to mock the windows only python packages
 def do_mock():
     import mock
-    MOCK_MODULES = ['winappdbg']
+    MOCK_MODULES = ['winappdbg', 'pykd']
     for mod_name in MOCK_MODULES:
         sys.modules[mod_name] = mock.Mock()
 
